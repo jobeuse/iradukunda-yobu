@@ -5,6 +5,7 @@
         --dar-blue: #1B2153;
         --white:white;
         --gray:#D2CFCF;
+        --darr-blue:#3A2B71;
     
 }
 body{
@@ -181,7 +182,7 @@ body{
 }
 
 .section-Under-main .card{
-    background-color: #3A2B71;
+    background-color: var(--darr-blue);
     transition: 0.4s;
     padding:50px;
     border-radius: 20px;
@@ -298,7 +299,6 @@ body{
 
 
 .Content .content-left .content-overimage {
-    background-color:;
     position: absolute;
     display: flex;
     column-gap: 15px;
@@ -373,3 +373,45 @@ body{
      color: var(--blue);
      background: var(--white);
  }
+
+
+ .show-case_cards{
+    margin-top: 290px;
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+ }
+
+
+  .show-case_cards .show-case-card {
+    background-color: var(--darr-blue);
+        transition: 0.4s;
+        padding: 32px 30px;
+        border-radius: 20px;
+        min-width: 200px;
+        max-width: 200px;
+        display: flex;
+        
+        justify-content: space-between;
+    
+    }
+
+          .show-case_cards .show-case-card:hover {
+            transform: scale(1.03);
+            cursor: pointer;
+          }
+
+ .show-case_cards .show-case-card h3{
+    color:var(--blue);
+    font-size: 78px;
+    margin: 0px;
+    font-weight: normal;
+
+ }
+
+  .show-case_cards .show-case-card p {
+    color: var(--white);
+    font-size: 23px;
+    font-weight: normal;
+  }
