@@ -380,7 +380,7 @@ body{
     display: flex;
     column-gap: 20px;
     justify-content: space-around;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
  }
 
 
@@ -415,3 +415,236 @@ body{
     font-size: 23px;
     font-weight: normal;
   }
+
+
+
+  .skills {
+      margin-top: 165px;
+    margin-bottom: 165px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-items: center;
+  }
+ 
+  .skills .header {
+      text-align: center;
+  }
+
+  .skills .header h5 {
+      color: var(--blue);
+      font-size: 38px;
+      font-weight: normal;
+  }
+
+  .skills_container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .skills-rating{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+    row-gap: 25px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+
+ 
+  .skills .header h1 {
+      color: var(--white);
+      font-size: 64px;
+      margin: 0;
+
+  } 
+  
+  .skills  .skills-rating .hmtl .html-outer{
+    background-color: var(--white);
+    width: 300px;
+    height: 6px;
+    border-radius: 6px;
+  }
+
+  .inner-html{
+    background-color:var(--blue);
+    height: 100%;
+    width: 80%;
+    border-radius: 0px 0 0 0;
+  }
+
+  .skills .skills-rating .css .css-outer {
+      background-color: var(--white);
+      width: 300px;
+      height: 6px;
+      border-radius: 6px;
+  }
+
+  .inner-css {
+      background-color: var(--blue);
+      height: 100%;
+      width: 80%;
+      border-radius: 0px 0 0 0;
+  }
+
+
+  .skills .skills-rating .js .js-outer {
+      background-color: var(--white);
+      width: 300px;
+      height: 6px;
+      border-radius: 6px;
+  }
+
+  .inner-js {
+      background-color: var(--blue);
+      height: 100%;
+      width: 60%;
+      border-radius: 0px 0 0 0;
+  }
+
+
+.skills .skills-rating .php .php-outer {
+    background-color: var(--white);
+    width: 300px;
+    height: 6px;
+    border-radius: 6px;
+}
+
+.inner-php {
+    background-color: var(--blue);
+    height: 100%;
+    width: 80%;
+    border-radius: 0px 0 0 0;
+}
+
+.skills .skills-rating .bootstrap .bootstrap-outer {
+    background-color: var(--white);
+    width: 300px;
+    height: 6px;
+    border-radius: 6px;
+}
+
+.inner-bootstrap {
+    background-color: var(--blue);
+    height: 100%;
+    width: 85%;
+    border-radius: 0px 0 0 0;
+}
+.skills .skills-rating .React .React-outer {
+    background-color: var(--white);
+    width: 300px;
+    height: 6px;
+    border-radius: 6px;
+}
+
+.inner-React {
+    background-color: var(--blue);
+    height: 100%;
+    width: 60%;
+    border-radius: 0px 0 0 0;
+}
+
+.skills .skills-rating .laravel .laravel-outer {
+    background-color: var(--white);
+    width: 300px;
+    height: 6px;
+    border-radius: 6px;
+}
+
+.inner-laravel {
+    background-color: var(--blue);
+    height: 100%;
+    width: 79%;
+    border-radius: 0px 0 0 0;
+}
+
+.number-text{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color:var(--gray);
+}
+
+.number {
+    color: var(--blue);
+}
+
+
+
+.services .header {
+    text-align: center;
+    
+}
+
+.services .header h5 {
+    color: var(--blue);
+    font-size: 38px;
+    font-weight: normal;
+    margin: 0px;
+
+
+}
+
+
+.services .header h1 {
+    color: var(--white);
+    font-size: 64px; 
+
+}
+
+
+.services-container {
+    display: flex;
+    margin-top: 195px;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-content: center;
+}
+
+.services-container .card {
+    background-color: var(--darr-blue);
+    transition: 0.4s;
+    padding: 50px;
+    border-radius: 20px;
+    min-width: 200px;
+    max-width: 200px;
+
+}
+
+
+.services-container .card:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.services-container .card .card-body svg {
+    width: 4em;
+    height: 4em;
+    margin: 0px;
+    padding: 0px;
+}
+
+.services-container .card .card-body .svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: var(--blue);
+}
+
+
+
+.services-container .card .card-body h4 {
+    color: var(--white);
+    font-weight: normal;
+    font-size: 24px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.services-container .card .card-body p {
+    color: var(--gray);
+    font-weight: normal;
+    font-size: 18px;
+
+}
