@@ -842,11 +842,114 @@ body{
     border-radius: 50%;
 }
 
-.contact {
-    margin-top: 165px;
+
+
+.blog{
+        margin-top: 165px;
+        width: 100%;
+        /* margin-bottom: 165px; */
+    }
+
+.blog {
+    margin-top: 140px;
     width: 100%;
-    /* margin-bottom: 165px; */
+    margin-bottom: 165px;
 }
+
+
+
+.blog .header {
+    text-align: center;
+
+}
+
+.blog .header h5 {
+    color: var(--blue);
+    font-size: 38px;
+    font-weight: normal;
+    margin: 0px;
+
+
+}
+
+
+.blog .header h1 {
+    color: var(--white);
+    font-size: 64px;
+    padding: 0px;
+    margin: 0px;
+    width: 90%;
+
+}
+
+
+
+.blog-container {
+    display: flex;
+    margin-top: 75px;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-content: center;
+}
+.blog-container .card {
+    background-color: var(--darr-blue);
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 350px;
+    min-height: 350px;
+    position: relative;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+.blog-container .car-header {
+    background-color: var(--darr-blue);
+    transition: 0.4s;
+    padding: 50px; 
+    height: 30%;
+    border-radius: 20px 20px 0 0;
+   
+
+}
+.blog-container .card-body{
+        width: 100%;
+        padding: 0px 20px;
+        border-radius: 0px 0px 20px 20px;
+}
+
+
+.blog-container .card-body h4{
+    margin: 0;
+    color: var(--white);
+    font-weight: normal;
+}
+.blog-container .card-body p {
+    color: var(--gray);
+}
+
+.blog-container .card-body a{
+    color: var(--blue);
+    padding: 0 10px 10px 0;
+}
+.blog-container .card:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .contact .header {
     text-align: center;
