@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+
 
 :root { 
         --blue: #04A6E4;
@@ -56,6 +58,28 @@ body{
     flex-direction: row; 
 }
 
+
+
+@media screen and (max-width: 600px) {
+    .NavItems_icons {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 .logo {
     width: 50px;
     height: 30px;
@@ -73,6 +97,15 @@ body{
     column-gap: 30px;
     flex-direction: row;
 }
+
+
+
+
+
+ 
+
+
+
 
 
 .Nav_items li a {
@@ -655,6 +688,108 @@ body{
 }
 
 
+
+.timelineResume{
+    margin-top: 165px;
+    max-width: 100%;  
+}
+
+
+.timelineResume .header {
+    text-align: center;
+
+}
+
+.timelineResume .header h5 {
+    color: var(--blue);
+    font-size: 38px;
+    font-weight: normal;
+    margin: 0px;
+
+
+}
+
+.timelineResume .header h1 {
+    color: var(--white);
+    font-size: 64px;
+    padding: 0px;
+    margin: 0px;
+
+}
+.tmline-container {
+    margin-top:60px ;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.left-tmline ,
+.right-tmline {
+width: 50%;
+}
+
+.left-tmline  h1, .right-tmline h1 {
+     color: var(--white);
+     font-size: 44px;
+     padding: 0px;
+     margin: 0px;
+    
+} 
+
+
+ .timeline {
+    word-break: break-all; 
+     color: #fff;
+     padding: 30px 20px; 
+ }
+
+ .timeline ul {
+     list-style-type: none;
+     border-left: 2px solid var(--gray);
+     padding: 10px 5px; 
+ }
+
+ .timeline ul li { 
+     padding: 20px 20px;
+     position: relative;
+     cursor: pointer;
+     transition: .5s;
+ }
+
+ .timeline ul li span { 
+     color: var(--gray);  
+     font-size: 13px;
+     padding: 10px;
+     text-align: center;
+ }
+
+ .timeline ul li .content h3 {
+     color: var(--white);
+     margin: 0;
+     font-weight: normal;
+     /* font-size: 17px; */
+     padding-top: 5px;
+ }
+
+ .timeline ul li .content p {
+     padding: 5px 0px 15px 0px;
+     font-size: 15px;
+     color: var(--gray);
+ }
+
+ .timeline ul li:before {
+     position: absolute;
+     content: '';
+     width: 50px;
+     height: 50px;
+     background-color: var(--blue);
+     border-radius: 50%;
+     left: -33px;
+     top: 28px;
+     transition: .5s;
+ }
+
 .portfolio{
         margin-top: 165px;
         /* margin-bottom: 165px; */
@@ -902,6 +1037,7 @@ body{
     border-radius: 20px;
     transition: 0.4s;
 }
+
 .blog-container .car-header {
     background-color: var(--darr-blue);
     transition: 0.4s;
@@ -935,21 +1071,6 @@ body{
     transform: scale(1.03);
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .contact .header {
     text-align: center;
@@ -1089,6 +1210,34 @@ border-radius: 50%;
  
 
 /* exptional */
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .slider { 

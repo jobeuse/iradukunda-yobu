@@ -72,6 +72,7 @@
                 </div>
             </div> 
         </nav>
+        
         <main>
             <section class="Section_header" id="#home">
                 <div class="Content_1">
@@ -388,6 +389,99 @@
                     </div>
                 </div>
             </section>
+
+ 
+            <section class="timelineResume" id="timelineResume"> 
+                <div class="header">
+                    <h5>Resume</h5>
+                    <h1>I Worked for Some Big Companies</h1>
+                </div>
+                <div class="tmline-container"> 
+                    <div class="left-tmline">
+                        <h1>Experience</h1>
+                        <div class="timeline">
+                            <ul> 
+                                <li> 
+                                    <div class="content">
+                                        <h3>INK DESIGN Ltd <span>( Feb 2020 - Dec 2021 )</span></h3>
+                                        <small>Graphic Designer</small>
+                                        <p>
+                                            I worked at INK DESIGN ltd for 5 months during internship period where i gained skills of strategies used at workplace,
+                                            web
+                                            development using Wordpress and graphic design
+
+                                        </p>
+                                    </div>
+                                </li>
+                                <li> 
+                                    <div class="content">
+                                        <h3>Mulindi TVET Shool <span>( Feb 2020 - Dec 2021 )</span></h3>
+                                        <small>Web Developer</small>
+                                        <p>
+                                            I have worked on the web application of Mulindi tvet school. Developed in Laravel and PHP for backend and Bootstrap,
+                                            Javascript for
+                                            frontend development.
+
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                
+                                    <div class="content">
+                                        <h3>250 STARTUPS INCUBATOR <span>( November 2021 - Feb 2022 )</span></h3>
+                                        <small>IT Intern </small>
+                                        <p>
+                                        I started professional internship as Software Developer at 250STARTUPS during november until now the internship will be
+                                        closed in
+                                        february of 2022, in this internship we are building the web application and mobile applications that are going to solve
+                                        real problems
+                                        in our community we work with the senior inorder to improve our skills.
+                                
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span></span>
+                                    <div class="content">
+                                        <h3>ACO-Rwanda <span>( Feb 2020 - Dec 2021 )</span></h3>
+                                        <small>Web Developer an Techinician</small>
+                                        <p>
+                                            I have worked on the web application of Stepin rw Developed in Laravel and PHP for backend and Bootstrap, Javascript for
+                                            frontend
+                                            development
+                                
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> 
+                    </div>
+                    <div class="right-tmline">
+                        <h1>Education</h1>
+                        <div class="timeline">
+                            <ul>
+                                <li> 
+                                    <div class="content">
+                                        <h3>IPRC Kigali <span>( February 2022 – present )</span></h3>
+                                        <small>Information and Technology</small>
+                                        <p> 
+                                        Relevant Coursework: Mathematics, Software development and Information technology.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content">
+                                        <h3>Mulindi TVET School <span>February 2018 – November 2021 )</span></h3>
+                                        <small>Technical Certificate of Secondary Education A2 Level</small>
+                                        <p>Relevant Coursework: Mathematics, Software development, Entrepreneurship.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </section> 
             <section class="portfolio" id="Portofolio" >
                 <div class="header">
                     <h5>Portfolio</h5>
@@ -614,13 +708,15 @@
                         </div>
                     </div>
                     <div class="contact-inner-right">
-                        <form class="form">
+                        <form class="form" id="form">
+                            <div id="error" style="color:red ;margin: 10px;"></div>
+                            <div id="success" style="background-color: green;color: white;margin-bottom: 10px;"></div>
                             <div class="inputs">
-                                <input type="text" placeholder="Your name">
-                                <input type="text"  placeholder="Your Email"> 
+                                <input type="text" id="name" placeholder="Your name">
+                                <input type="text" id="email"  placeholder="Your Email"> 
                             </div>
                             <div class="textarea">
-                                <textarea  placeholder="Your Message"></textarea>
+                                <textarea id="message"  placeholder="Your Message"></textarea>
                             </div>  
                             <button>Submit</button>                           
                         </form>
@@ -634,7 +730,7 @@
         </main> 
     </div>
  
-
+<script src="/assets/js.js"></script>
 </body>
 
 </html>
