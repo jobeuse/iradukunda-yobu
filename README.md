@@ -11,5 +11,5 @@ personal portfolio website <br>
 HTML CSS and JAVASCRIPT
 
 ### ContactMe
-irayobu@gmail.com
-[0780809031](0780809031)
+irayobu@gmail.com &nbsp; &nbsp;
+0780809031 
