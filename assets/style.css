@@ -1189,8 +1189,15 @@ width: 50%;
     row-gap: 20px;
     justify-content: center;
     flex-grow: 1;
+    color: var(--white);
     flex-wrap: wrap;
    
+}
+.inputs input {
+    color: var(--white);
+}
+.inputs textarea {
+    color: var(--white);
 }
 .textarea{
     width: 100%;   
