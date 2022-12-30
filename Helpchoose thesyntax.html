@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My blogs</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -83,30 +84,28 @@
                 </svg>
             </a>
         </nav>
-        <section class="contact" id="Contact">
-            <div class="header">
-                <h5>Blog</h5>
-                <h1>Add new Blog</h1>
-            </div>
-            <div class="contact-container"> 
-                <div class="contact-inner-right">
-                    <form class="form" id="blogForm">
-                        <div id="error" style="color:red ;margin: 10px;"></div>
-                        <div id="success" style="background-color: green;color: white;margin-bottom: 10px;"></div>
-                        <div class="inputs">
-                            <input type="text" id="blog_title" placeholder="title">
-                            <input type="date" id="blog_date" placeholder="blog_date">
-                            <input type="url" id="blog_image" placeholder="image url"> 
-        
-                            <textarea id="blog_body" placeholder="Body"></textarea>
-                        </div>
-                        <button onclick="addBlog()">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </section>
+    </div>
+    <section class="contact" id="Contact">
+        <div class="header">
+            <h5>Blog</h5>
+            <h1> Help choose the syntax for CSS Nesting</h1>
         </div>
-        <script src="/assets/js.js"></script>
-    </body>
+        <div class="contact-container">
+            <pre style="color: antiquewhite; font-size: 16px;">
+                CSS Nesting is making the rounds yet again. Remember earlier this year when Adam and Miriam put three syntax options up
+                for a vote? Those results were tallied and it wasn’t even even close.
+                
+                Now there’s another chance to speak into the future of nesting, this time over at the WebKit blog. The results from the
+                Adam and Miriam’s survey sparked further discussion and two more ideas were added to the mix. This new survey lets you
+                choose from all five options.
+                
+                Jen Simmons has put together a thorough outline of those options, including a refresher on nesting, details on how we
+                arrived at the five options, and tons of examples that show the options in various use cases. Let’s return the favor of
+                all the hard work that’s being done here by taking this quick one-question survey.
+            </pre>
+        </div>
+    </section>
+    <script src="/assets/js.js"></script>
+</body>
+
 </html>
-    
