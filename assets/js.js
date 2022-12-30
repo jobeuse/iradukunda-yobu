@@ -1,10 +1,11 @@
  function submitContact () {
-        var form=document.getElementById("form")
+        var form=document.getElementById("form_Form")
         .addEventListener("submit",(e)=>{
             e.preventDefault(); 
             name= document.getElementById("name").value;
             email = document.getElementById("email").value;
             message = document.getElementById("message").value;
+            var contact_number=document.getElementById('contact_number');
         
             if (!name){
 
@@ -21,8 +22,17 @@
                     console.log(name); 
 
                     document.getElementById("error").innerHTML="";
-                    document.getElementById("success").innerHTML=` Your response have been saved,  `+name;
-                    
+                        contact_number = Math.random() * 100000 | 0;
+                    console.log(form);
+                        emailjs.sendForm('service_a3rhdtr', 'template_ec68t4q', document.getElementById("form_Form"))
+                            .then(function(response) {
+                             document.getElementById("success").innerHTML=` Your response have been saved,  `+name;
+                                document.getElementById("name").value=""; 
+                                document.getElementById("email").value="";
+                                document.getElementById("message").value="";
+                            }, function(error) {
+                              document.getElementById("error").innerHTML='FAILED...', error;
+                            });
 
                 }else{
                     document.getElementById("error").innerHTML="Email format is not correct";
@@ -72,41 +82,41 @@ closeNavbar();
 
 // get blog
 
-function getBlogs () { 
-    const blogsList=localStorage.getItem('blogs');
-    const blogs=JSON.parse(blogsList); 
-    const blog_container=document.getElementById("blogcontainer");
+// function getBlogs () { 
+//     const blogsList=localStorage.getItem('blogs');
+//     const blogs=JSON.parse(blogsList); 
+//     const blog_container=document.getElementById("blogcontainer");
 
-    if(blogs){
-        blog_container.innerHTML +=
-        blogs.map((blog) =>` 
-        <div class="card">
-            <div class="car-header" style="background-image:url('${blog.image}');background-size:cover;background-repeat: no-repeat;">
-            </div>
-            <div class="card-body">
-                <p><a href="">${blog.title}</a>${blog.date}</p>
-                <h4> ${blog.body}</h4>
-                <div style="display:flex">
-                <a href="javascript:void(0);" style="color:red;flex-grow:1;" onclick="deleteBlog(${blog.id})">Delete</a>
-                 <a href="javascript:void(0);" style="color:#04A6E4;flex-grow:1;" onclick="editBlog(${blog.id})">Edit</a>
+//     if(blogs){
+//         blog_container.innerHTML +=
+//         blogs.map((blog) =>` 
+//         <div class="card">
+//             <div class="car-header" style="background-image:url('${blog.image}');background-size:cover;background-repeat: no-repeat;">
+//             </div>
+//             <div class="card-body">
+//                 <p><a href="">${blog.title}</a>${blog.date}</p>
+//                 <h4> ${blog.body}</h4>
+//                 <div style="display:flex">
+//                 <a href="javascript:void(0);" style="color:red;flex-grow:1;" onclick="deleteBlog(${blog.id})">Delete</a>
+//                  <a href="javascript:void(0);" style="color:#04A6E4;flex-grow:1;" onclick="editBlog(${blog.id})">Edit</a>
                 
-                </div> 
-            </div>
-        </div>
+//                 </div> 
+//             </div>
+//         </div>
 
-        `);
-    }else{
-         blog_container.innerHTML=
-        `
-            <div class="noblog"> 
-                <div class="">
-                    No blogs found
-                </div>
-            </div>
-       ` 
-    }
+//         `);
+//     }else{
+//          blog_container.innerHTML=
+//         `
+//             <div class="noblog"> 
+//                 <div class="">
+//                     No blogs found
+//                 </div>
+//             </div>
+//        ` 
+//     }
     
-}
+// }
 
 function EditBlog(id) {
     console.log(id);
