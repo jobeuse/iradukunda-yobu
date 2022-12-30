@@ -1055,7 +1055,7 @@ width: 50%;
 
 
 .blog{
-        margin-top: 165px;
+        margin-top: 50px;
         width: 100%;
         /* margin-bottom: 165px; */
     }
@@ -1066,6 +1066,12 @@ width: 50%;
     margin-bottom: 165px;
 }
 
+
+.noblog{
+    background-color: var(--white);
+    padding: 10px 40px;
+    color: var(--blue);
+}
 
 
 .blog .header {
