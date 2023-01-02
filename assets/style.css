@@ -42,12 +42,24 @@ body{
 .container {
         margin: 0 13%;
     }
+#desktop_profile{
+    display: block;
+}
+#mobile_profile{
+    display: none;
+}
 }
 
 @media screen and (max-width: 901px) {
 .container {
         margin: 0 3%;
     }
+    #desktop_profile{
+        display: none;
+    }
+        #mobile_profile {
+            display: block;
+        }
 }
 
 
